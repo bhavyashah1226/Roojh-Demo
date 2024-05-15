@@ -1,8 +1,8 @@
 import "./RegistrationPage.css";
 import React, { useState } from "react";
 import cx from "classnames";
-import aabhaLogo from "../../Icons/AabhaSS.png";
-import { Radio } from "@material-ui/core";
+import aabhaLogo from "../../Assests/Icons/AabhaSS.png";
+import { Paper, Radio } from "@material-ui/core";
 import RadioGroup from "@material-ui/core/RadioGroup";
 import FormControlLabel from "@material-ui/core/FormControlLabel";
 import FormLabel from "@material-ui/core/FormLabel";
@@ -42,7 +42,7 @@ function LoginPage(props) {
   const desk_no = [1, 2, 3, 4, 5, 6, 7, 8];
 
   return (
-    <>
+    <Paper>
       <div className="loginContainer">
         <div className="heading">
           <div className="headText">
@@ -214,7 +214,7 @@ function LoginPage(props) {
           </Button>
         </div>
       </div>
-    </>
+    </Paper>
   );
 }
 export default LoginPage;

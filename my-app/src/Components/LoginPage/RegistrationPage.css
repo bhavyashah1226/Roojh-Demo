@@ -7,6 +7,7 @@
   min-height: 550px;
   min-width: none;
   font-family: "Rubik";
+  margin-top: 25px;
   .heading {
     display: flex;
     flex-direction: column;
@@ -81,7 +82,7 @@
   }
   .divider {
     margin-top: 20px;
-    width: 100%;
+    width: 95%;
     color: black;
     height: 2px;
   }
