@@ -1,0 +1,113 @@
+.loginContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  min-height: 550px;
+  min-width: none;
+  font-family: "Rubik";
+  .heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+    .headText {
+      display: flex;
+      margin: 1px;
+      .poweredBy {
+        color: #204289;
+        padding: 2px;
+      }
+      .roojh {
+        color: #f46524;
+        padding: 2px;
+      }
+    }
+    .aabhaLogo {
+      width: 289px;
+      height: 64px;
+    }
+  }
+  .welcomeContainer {
+    .welcomeText {
+      font-weight: 700;
+      font-size: 30px;
+      color: #204289;
+    }
+    .supportingText {
+      font-weight: 400;
+      font-size: 16px;
+      color: #706d6d;
+    }
+  }
+  .userTypeContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    .userTypeLabel,
+    .deskNoLabel {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      margin-left: -13px;
+      font-weight: bold;
+      color: black;
+    }
+    .dropdownLabel {
+      padding-left: 5px;
+    }
+    .deskNoDropdown {
+      box-shadow: 0 0 1px 0px;
+      line-height: 30px;
+    }
+    .userTypeLabelRadioGroup {
+      .radioLabel {
+        box-shadow: 0 0 0px 0.5px grey;
+        padding-right: 15px;
+        border-radius: 5px;
+        .radioButton {
+          color: lightgrey;
+        }
+        .radioButtonSelected {
+          color: #f46524;
+        }
+      }
+      .radioLabelSelected {
+        box-shadow: 0 0 0px 0.5px #f46524;
+        background-color: rgba(244, 101, 36, 0.17);
+      }
+    }
+  }
+  .divider {
+    margin-top: 20px;
+    width: 100%;
+    color: black;
+    height: 2px;
+  }
+
+  .loginFormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    .loginLabel {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-weight: bold;
+      color: black;
+      align-self: flex-start;
+    }
+    .username,
+    .password {
+      width: 100%;
+      margin-top: 10px;
+    }
+    .loginBtn {
+      width: 100%;
+      background-color: #204289;
+      color: white;
+      margin-top: 15px;
+    }
+  }
+}
