@@ -98,7 +98,7 @@ function LoginPage(props) {
                   })}
                 />
               }
-              label="Registration Deck"
+              label="Registration Desk"
             />
 
             <FormControlLabel

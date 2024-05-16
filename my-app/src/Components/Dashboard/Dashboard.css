@@ -1,101 +1,114 @@
 .dashboardContainer {
   display: flex;
-  flex-direction: column;
-  width: 100%;
-  font-family: "Rubik";
-  .topBar {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    .dashboardHeading {
-      display: flex;
-      align-items: flex-end;
-      font-weight: 700;
-    }
-    .searchBox {
-      max-width: 800;
-    }
-  }
-  .gridContainer {
-    margin-top: 25px;
-    width: 100%;
+  height: 100vh;
+  .dashboardRight {
     display: flex;
     flex-direction: column;
-    .tableHeading {
+    width: 100%;
+    height: 100;
+    .dashboardContent {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 25px 0px 25px;
-      .tableCount {
+      flex-direction: column;
+      width: 100%;
+      font-family: "Rubik";
+      background-color: #f0f0f0;
+      padding: 10px;
+      height: 100%;
+      .topBar {
         display: flex;
+        justify-content: space-between;
+        width: 100%;
         align-items: center;
-        .count {
+        .dashboardHeading {
+          display: flex;
+          align-items: flex-end;
           font-weight: 700;
         }
+        .searchBox {
+          max-width: 800;
+        }
       }
-    }
-    .tableHeadingSpecialPatients {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 25px 0px 25px;
-      .dropdown {
-        min-width: 100px;
-      }
-    }
-
-    .tableChipsHeading {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 25px 0px 25px;
-      .filterChips {
+      .gridContainer {
+        margin-top: 15px;
+        width: 100%;
+        height: 100%;
         display: flex;
-        .filterChipNew,
-        .filterChipExisting {
+        flex-direction: column;
+        .tableHeading {
           display: flex;
-          min-width: 70px;
-          margin-right: 10px;
-          padding: 0px 20px;
-          border-radius: 5%;
-          font-size: small;
-          div {
-            font-weight: 700;
-            margin-left: 5px;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 25px 0px 25px;
+          .tableCount {
+            display: flex;
+            align-items: center;
+            .count {
+              font-weight: 700;
+            }
           }
         }
-        .filterChipNew {
-          background-color: lightskyblue;
+        .tableHeadingSpecialPatients {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 25px 0px 25px;
+          .dropdown {
+            min-width: 100px;
+          }
         }
-        .filterChipExisting {
-          background-color: pink;
+
+        .tableChipsHeading {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 10px 25px 0px 25px;
+          .filterChips {
+            display: flex;
+            .filterChipNew,
+            .filterChipExisting {
+              display: flex;
+              min-width: 70px;
+              margin-right: 10px;
+              padding: 0px 20px;
+              border-radius: 5%;
+              font-size: small;
+              div {
+                font-weight: 700;
+                margin-left: 5px;
+              }
+            }
+            .filterChipNew {
+              background-color: lightskyblue;
+            }
+            .filterChipExisting {
+              background-color: pink;
+            }
+          }
+          .tableCount {
+            display: flex;
+            align-items: center;
+            .count {
+              font-weight: 700;
+            }
+          }
         }
-      }
-      .tableCount {
-        display: flex;
-        align-items: center;
-        .count {
-          font-weight: 700;
-        }
-      }
-    }
-    .tabsContainer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      .filterList {
-        display: flex;
-        .filterLabel {
-          font-size: small;
-          font-weight: 500;
-        }
-        .filterLabel:nth-child(2) {
-          color: #f46524;
-        }
-        .filterLabel:nth-child(3) {
-          color: gray;
+        .tabsContainer {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .filterList {
+            display: flex;
+            .filterLabel {
+              font-size: small;
+              font-weight: 500;
+            }
+            .filterLabel:nth-child(2) {
+              color: #f46524;
+            }
+            .filterLabel:nth-child(3) {
+              color: gray;
+            }
+          }
         }
       }
     }

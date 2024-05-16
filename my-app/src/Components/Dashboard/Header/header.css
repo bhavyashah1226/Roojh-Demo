@@ -1,0 +1,44 @@
+.headerContainer {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: "Rubik";
+  width: 100%;
+  justify-content: space-between;
+  .userDetailsContainer {
+    display: flex;
+    align-items: center;
+    justify-self: flex-start;
+    .avatar {
+      background-color: green;
+      margin: 0px 10px;
+    }
+    .userDetails {
+      display: flex;
+      flex-direction: column;
+      .username {
+        font-weight: 700;
+      }
+      .details {
+        font-size: small;
+        color: darkgray;
+      }
+    }
+  }
+  .hospitalDropdown,
+  .userDropdown {
+    min-width: fit-content;
+    box-shadow: 0 0 0.5px 0.5px gray;
+    padding: 5px;
+    .MuiSelect-select.MuiSelect-select {
+      display: flex;
+      align-items: center;
+    }
+    .avatar {
+      margin-right: 5px;
+    }
+  }
+  .hospitalDropdown {
+    margin-right: 100px;
+  }
+}
