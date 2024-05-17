@@ -2,21 +2,24 @@ import "./RegistrationPage.css";
 import React, { useState } from "react";
 import cx from "classnames";
 import aabhaLogo from "../../Assests/Icons/AabhaSS.png";
-import { Paper, Radio } from "@material-ui/core";
-import RadioGroup from "@material-ui/core/RadioGroup";
-import FormControlLabel from "@material-ui/core/FormControlLabel";
-import FormLabel from "@material-ui/core/FormLabel";
-import FormControl from "@material-ui/core/FormControl";
-import Select from "@material-ui/core/Select";
-import MenuItem from "@material-ui/core/MenuItem";
-import Divider from "@material-ui/core/Divider";
-import TextField from "@material-ui/core/TextField";
-import Button from "@material-ui/core/Button";
-import IconButton from "@material-ui/core/IconButton";
-import InputAdornment from "@material-ui/core/InputAdornment";
+import {
+  Paper,
+  Radio,
+  RadioGroup,
+  FormControlLabel,
+  FormLabel,
+  FormControl,
+  Select,
+  MenuItem,
+  Divider,
+  TextField,
+  Button,
+  IconButton,
+  InputAdornment,
+  InputLabel,
+  Snackbar,
+} from "@material-ui/core";
 import { Visibility, VisibilityOff } from "@material-ui/icons";
-import InputLabel from "@material-ui/core/InputLabel";
-import Snackbar from "@material-ui/core/Snackbar";
 
 function LoginPage(props) {
   const { validUser, setValidUser, deskNo, setDeskNo } = props;
